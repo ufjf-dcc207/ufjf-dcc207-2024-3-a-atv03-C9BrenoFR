@@ -1,5 +1,17 @@
 import "./Animal.css";
 
-export default function Animal(){
-    return <div className="animal">Animal</div>
+interface AnimalProps{
+    icone: string;
+    nome: string;
+    peso: number;
+    extincao: boolean;
+}
+
+export default function Animal({icone, nome, peso, extincao}: AnimalProps){
+    return <div className="animal">
+        <div>{icone}</div>
+        <div>{nome}</div>
+        <div>{peso.toLocaleString()} Kg</div>
+        <div>{extincao}</div>
+    </div>
 }
