@@ -5,7 +5,7 @@ function App() {
 
   return (
     <div className="app">
-      <Animal icone='🦁' nome='Leão' peso={190.37} extincao={true} />
+      <Animal icone='🦁' nome='Leão' peso={190.37} extincao={false} />
     </div>
   )
 }
